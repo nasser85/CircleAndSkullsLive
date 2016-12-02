@@ -1,0 +1,20 @@
+<div id="start">
+
+	<div class="menus" id="start-menu">
+		<div class="jumbotron col-sm-6 col-sm-offset-3">
+		  <h2><kbd>Circles and Skulls</kbd></h2>
+		  <div class="row">
+			  <div ng-repeat="player in players" class="col-xs-6 col-md-3">
+			    <a  class="characters">
+			      <img ng-click="select(player)" class="character-pics" src="{{player}}" alt="...">
+			    </a>
+			  </div>
+			</div>
+			<p><kbd>Select a character to play</kbd></p>
+		  <p>
+		  	<a class="btn btn-warning btn-lg" href="#" role="button">Tutorial</a>
+		  </p>
+		</div>
+	</div>
+
+</div>
