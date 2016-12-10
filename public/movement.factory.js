@@ -98,8 +98,8 @@ app.factory('MovementFactory', function() {
       }
     } else {
       if (circleRight >= left + 30 && circleLeft <= right - 30 && circleTop <= bottom - 30 && circleBottom >= top + 30) {
-        if (circle.image.className !== "magictime bombRightOut" && parseInt(circle.image.height) < parseInt(character.style.height)) {
-            circle.image.className = "magictime bombRightOut";
+        if (circle.image.className !== "animated rotateOut" && parseInt(circle.image.height) < parseInt(character.style.height)) {
+            circle.image.className = "animated rotateOut";
             mainCharacter.skulls ++;
             setTimeout(function() {
               if (circle.directionY > 0) {
@@ -114,8 +114,8 @@ app.factory('MovementFactory', function() {
               circle.image.className = "";
             }, 1000)
             
-        } else if (circle.image.className !== "magictime bombRightOut" && parseInt(circle.image.height) > parseInt(character.style.height)) {
-          character.className = "magictime holeOut";
+        } else if (circle.image.className !== "animated rotateOut" && parseInt(circle.image.height) > parseInt(character.style.height)) {
+          character.className = "animated zoomOutDown";
           mainCharacter.alive = false;
           setTimeout(function() {
             character.style.display = 'none';
